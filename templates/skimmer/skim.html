@@ -4,5 +4,7 @@
     <h1><a href="{{ article.webUrl }}">{{ article.headline }}</a></h1>
     <p>{% if article.standFirst %}{{ article.standFirst }}{% else %}{{ article.trailText }}{% endif %}</p>
     {% if article.trailImage %}<img src="{{ article.trailImage }}">{% endif %}
+  {% empty %}
+    <p>We couldn't find any results for that.</p>
   {% endfor %}
 {% endblock %}
