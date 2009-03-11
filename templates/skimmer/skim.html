@@ -1,10 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="section hfeed">
   {% for article in articles %}
-    <h1><a href="{{ article.webUrl }}">{{ article.headline }}</a></h1>
-    <p>{% if article.standFirst %}{{ article.standFirst }}{% else %}{{ article.trailText }}{% endif %}</p>
+  <div class="hentry article">
+    <h1 class="entry-title"><a href="{{ article.webUrl }}" rel="bookmark">{{ article.headline }}</a></h1>
+    <p class="entry-summary">{% if article.standFirst %}{{ article.standFirst }}{% else %}{{ article.trailText }}{% endif %}</p>
     {% if article.trailImage %}<img src="{{ article.trailImage }}">{% endif %}
+    <p>at <abbr title="{{ article.publicationDate }}">{{ article.publicationDate }}</abbr></p>
+  </div>
   {% empty %}
     <p>We couldn't find any results for that.</p>
-  {% endfor %}
+  {% endfor %}  
+</div>
 {% endblock %}
