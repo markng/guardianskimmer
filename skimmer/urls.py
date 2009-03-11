@@ -4,5 +4,6 @@ import skimmer.views
 
 urlpatterns = patterns('',
   (r'^$', cache_page(skimmer.views.skim, 600), {}, "home"),
-  (r'^k/(?P<search>.*)$', cache_page(skimmer.views.skim, 600), {'type' : 'keyword'}, "skim"),
+  (r'^s/k/(?P<search>.*)$', cache_page(skimmer.views.skim, 600), {'type' : 'keyword', 'snippet' : True}, "skimsnip"),  
+  (r'^k/(?P<search>.*)$', cache_page(skimmer.views.skim, 600), {'type' : 'keyword', 'snippet' : False}, "skim"),
 )

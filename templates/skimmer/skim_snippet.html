@@ -1,7 +1,7 @@
-{% extends "base.html" %}
+{% extends "snippet.html" %}
 {% load skimmer_tags %}
 {% block content %}
-  <div class="section hfeed">
+<div class="section hfeed">
   {% for article in articles %}
   <div class="hentry article">
     {% if article.trailImage %}<img src="{{ article.trailImage }}">{% endif %}
@@ -11,6 +11,6 @@
   </div>
   {% empty %}
     <p>We couldn't find any results for that.</p>
-  {% endfor %}
-  </div>
+  {% endfor %}  
+</div>
 {% endblock %}

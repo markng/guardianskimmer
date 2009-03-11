@@ -12,4 +12,8 @@ def skim(request, **args):
     results = client.search(q = '/' + args['search'], after = time.strftime('%Y%m%d'))
   else:
     results = client.search(q = '', after = time.strftime('%Y%m%d'))
-  return render_to_response('skimmer/skim.html', {'articles' : results})
+  
+  if args.has_key('snippet') and args['snippet']:
+    return render_to_response('skimmer/skim_snippet.html', {'articles' : results})
+  else:
+    return render_to_response('skimmer/skim.html', {'articles' : results})
