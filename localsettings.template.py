@@ -1,6 +1,7 @@
 SECRET_KEY = 'Make up a secret key to go here (and no sharing).'
 GUARDIAN_API_KEY = 'Insert your guardian api key here.'
 
+CACHE_BACKEND = 'dummy:///' # you'll want to change this if you don't want to hit your API limit quickly
 # we're not actually using a database here, so none of this really matters anyway
 DATABASE_ENGINE = ''           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = ''             # Or path to database file if using sqlite3.
