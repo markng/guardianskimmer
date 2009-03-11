@@ -6,6 +6,21 @@
     </title>
   </head>
   <body>
+    <div id="nav">
+      <ul>
+				<li><a href="{% url skim search="uk" %}">UK</a></li>
+        <li><a href="{% url skim search="world" %}">World</a></li>
+        <li><a href="{% url skim search="world/usa" %}">United States</a></li>
+        <li><a href="{% url skim search="politics" %}">Politics</a></li>
+        <li><a href="{% url skim search="media" %}">Media</a></li>
+        <li><a href="{% url skim search="education" %}">Education</a></li>
+        <li><a href="{% url skim search="society" %}">Society</a></li>
+        <li><a href="{% url skim search="science" %}">Science</a></li>
+        <li><a href="{% url skim search="technology" %}">Technology</a></li>
+        <li><a href="{% url skim search="football" %}">Football</a></li>
+        <li><a href="{% url skim search="theguardian" %}">Guardian</a></li>
+      </ul>
+    </div>
     {% block content %}
       
     {% endblock %}
