@@ -1,4 +1,51 @@
 body{
   font-size: 100%;
   font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: georgia, serif;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+/* Navigation styles */
+div#nav{
+  float: left;
+  width: 10%;
+}
+div#nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+}
+/* main section styles */
+div.hfeed{
+  float: left;
+  width: 90%;
+  font-size: 80%;
+}
+/* article styles */
+div.hentry{
+  float: left;
+  width: 25%;
+  height: 15em; /* yuck, fixed height, but necessary */
+  max-height: 15em;
+  overflow: hidden;
+}
+div.hentry h1{
+  font-size: 1.5em;
+}
+div.hentry h1, div.hentry p{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+div.hentry img{
+  float: right;
+  padding: 4px;
+  border: 1px solid black;
 }
