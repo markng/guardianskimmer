@@ -1,6 +1,8 @@
 from django.conf.urls.defaults import *
+from django.views.decorators.cache import cache_page
+import skimmer.views
 
 urlpatterns = patterns('',
-  (r'^$', 'skimmer.views.skim', {}, "home"),
-  (r'^k/(?P<search>.*)$', 'skimmer.views.skim', {'type' : 'keyword'}, "skim"),
+  (r'^$', cache_page(skimmer.views.skim, 600), {}, "home"),
+  (r'^k/(?P<search>.*)$', cache_page(skimmer.views.skim, 600), {'type' : 'keyword'}, "skim"),
 )
