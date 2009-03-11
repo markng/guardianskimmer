@@ -1,4 +1,5 @@
-# Django settings for guardianskimmer project.
+from os import path as os_path
+PROJECT_PATH = os_path.abspath(os_path.split(__file__)[0])
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
@@ -51,9 +52,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'guardianskimmer.urls'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+  os_path.join(PROJECT_PATH, 'templates'),
 )
 
 INSTALLED_APPS = (
