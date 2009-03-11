@@ -1,4 +1,5 @@
-SECRET_KEY = 'INSERT SECRET KEY HERE !'
+SECRET_KEY = 'Make up a secret key to go here (and no sharing).'
+GUARDIAN_API_KEY = 'Insert your guardian api key here.'
 
 # we're not actually using a database here, so none of this really matters anyway
 DATABASE_ENGINE = ''           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
