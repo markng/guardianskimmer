@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/5/trunk/guardianapi
+END
+errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/guardianapi/errors.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/guardianapi/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/guardianapi/__init__.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/guardianapi/utils.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/guardianapi/tests.py
+END
+fetchers.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/guardianapi/fetchers.py
+END
+mockapi.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/guardianapi/mockapi.py
+END
