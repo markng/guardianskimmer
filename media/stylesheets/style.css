@@ -28,17 +28,20 @@ div.hfeed{
   float: left;
   width: 90%;
   font-size: 80%;
+  border-left: 1px solid black;
 }
 /* article styles */
 div.hentry{
   float: left;
-  width: 25%;
+  width: 24.9%;
   height: 15em; /* yuck, fixed height, but necessary */
   max-height: 15em;
   overflow: hidden;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 div.hentry h1{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 div.hentry h1, div.hentry p{
   padding-left: 3px;
@@ -46,6 +49,7 @@ div.hentry h1, div.hentry p{
 }
 div.hentry img{
   float: right;
-  padding: 4px;
+  margin: 2px;
+  padding: 2px;
   border: 1px solid black;
 }
