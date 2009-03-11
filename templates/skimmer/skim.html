@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+  {% for article in articles %}
+    <h1>{{article.headline}}</h1>
+  {% endfor %}
+{% endblock %}

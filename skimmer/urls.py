@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
 
 urlpatterns = patterns('',
-  (r'^', include('skimmer.urls')),
+  (r'^$', 'skimmer.views.skim', {}, "home"),
 )
