@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
   {% for article in articles %}
-    <h1>{{article.headline}}</h1>
+    <h1><a href="{{ article.webUrl }}">{{ article.headline }}</a></h1>
+    <p>{% if article.standFirst %}{{ article.standFirst }}{% else %}{{ article.trailText }}{% endif %}</p>
   {% endfor %}
 {% endblock %}
