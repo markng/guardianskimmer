@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load skimmer_tags %}
 {% block content %}
 <div class="section hfeed">
   {% for article in articles %}
@@ -6,7 +7,7 @@
     {% if article.trailImage %}<img src="{{ article.trailImage }}">{% endif %}
     <h1 class="entry-title"><a href="{{ article.webUrl }}" rel="bookmark">{{ article.headline|safe }}</a></h1>
     <p class="entry-summary">{% if article.standFirst %}{{ article.standFirst|truncatewords_html:20|safe }}{% else %}{{ article.trailText|truncatewords_html:20|safe }}{% endif %}</p>
-    <p>at <abbr title="{{ article.publicationDate }}">{{ article.publicationDate }}</abbr></p>
+    <p>on <abbr title="{{ article.publicationDate }}">{{ article.publicationDate|guardian_format_date }}</abbr></p>
   </div>
   {% empty %}
     <p>We couldn't find any results for that.</p>

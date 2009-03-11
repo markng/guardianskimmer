@@ -56,6 +56,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+  'skimmer',
 )
 
 from localsettings import *
